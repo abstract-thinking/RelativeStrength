@@ -1,0 +1,2 @@
+class CompanyMismatchException(RuntimeError):
+    pass
