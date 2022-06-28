@@ -23,7 +23,10 @@ class CompaniesComparer:
         if response.status_code == 404:
             # Be prepared that maybe during the week the excel sheet does not exist, use the last Friday
             print('Excel sheet not found. Retry!')
-            day = date.today() + relativedelta(weekday=FR(-1))
+            if day.weekday() != 4:
+                day = date.today() + relativedelta(weekday=FR(-1))
+            else:
+                day = date.today() + relativedelta(days=-1)
             url = URL_TEMPLATE.format(day)
             print(url)
             response = requests.get(url)

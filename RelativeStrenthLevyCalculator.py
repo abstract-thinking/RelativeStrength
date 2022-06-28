@@ -14,7 +14,7 @@ class RelativeStrengthLevyCalculator:
     def calculate(self):
         frames = list()
         for company in self.companies:
-            print("Calculatring RSL " + company["name"])
+            print("Calculating RSL for " + company["name"])
             # data = yf.download(tickers=fruits, period='1y', interval="1d", group_by='date')
             yahoo_symbol = company["symbols"]["yahoo"]
             data = yf.Ticker(yahoo_symbol)

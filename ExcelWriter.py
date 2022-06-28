@@ -2,13 +2,14 @@ import pandas as pd
 
 from datetime import date, datetime
 from dateutil.relativedelta import relativedelta
+from dateutil.rrule import rrule, DAILY
 
 DATE_FORMAT = '%d.%m.%Y'
 
 
 def highlight_max(s):
     is_large = s.nlargest(6).values
-    return ['background-color: red' if v in is_large else '' for v in s]
+    return ['background-color: #e06666' if v in is_large else '' for v in s]
 
 
 class ExcelWriter:
@@ -27,18 +28,24 @@ class ExcelWriter:
 
     def to_weekly(self):
         dates = list()
-        for day in self.fridays:
-            if day in self.daily.columns:
-                print(day)
-                dates.append(day)
+        for friday in self.fridays:
+            if friday in self.daily.columns:
+                print(friday)
+                dates.append(friday)
             else:
-                date_not_found = datetime.strptime(day, DATE_FORMAT)
-                new_date = (date_not_found - relativedelta(days=1)).strftime(DATE_FORMAT)
-                if new_date in self.daily.columns:
-                    print("Not a Friday: " + new_date)
-                    dates.append(new_date)
-                else:
-                    print("Better logic needed!")
+                friday_not_found = datetime.strptime(friday, DATE_FORMAT)
+
+                previous_day = friday_not_found - relativedelta(days=1)
+                end_date = friday_not_found - relativedelta(days=3)
+
+                while previous_day >= end_date:
+                    this_day = previous_day.strftime(DATE_FORMAT)
+                    if this_day in self.daily.columns:
+                        print("Use a previous day: " + this_day)
+                        dates.append(this_day)
+                        break
+
+                    previous_day -= relativedelta(days=1)
 
         tmp_weekly = self.daily.filter(dates)
         return tmp_weekly[tmp_weekly.columns[::-1]]
@@ -49,11 +56,14 @@ class ExcelWriter:
             writer, sheet_name="rsl", float_format='%06.4f')
         worksheet = writer.sheets['rsl']
 
-        worksheet.set_column(0, 0, 40)  # index
+        font_format = writer.book.add_format({"font_name": "Arial"})
+        num_format = writer.book.add_format({'num_format': '#,##0.00'})
+        worksheet.set_column(0, 0, 40, font_format) # index/company names
+
         for column in self.weekly:
             # column_length = max(weekly[column].astype(str).map(len).max(), len(column))
             column_length = 13  # only the length of date is relevant
             col_idx = 1 + self.weekly.columns.get_loc(column)
-            worksheet.set_column(col_idx, col_idx, column_length)
+            worksheet.set_column(col_idx, col_idx, column_length, num_format)
 
         writer.save()
