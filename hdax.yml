@@ -153,11 +153,6 @@
   symbols: 
     trading: EOAN
     yahoo: EOAN.DE
-- name: Eckert & Ziegler AG
-  isin: DE0005659700
-  symbols: 
-    trading: EUZ
-    yahoo: EUZ.DE
 - name: Evonik Industries AG
   isin: DE000EVNK013
   symbols: 
@@ -233,11 +228,6 @@
   symbols: 
     trading: BOSS
     yahoo: BOSS.DE
-- name: Hypoport SE
-  isin: DE0005493365
-  symbols: 
-    trading: HYQ
-    yahoo: HYQ.DE
 - name: Infineon Technologies AG
   isin: DE0006231004
   symbols: 
@@ -318,11 +308,6 @@
   symbols: 
     trading: NEM
     yahoo: NEM.DE
-- name: Nordex SE
-  isin: DE000A0D6554
-  symbols: 
-    trading: NDX1
-    yahoo: NDX1.DE
 - name: Porsche Automobil Holding SE
   isin: DE000PAH0038
   symbols: 
@@ -498,3 +483,18 @@
   symbols: 
     trading: ZAL
     yahoo: ZAL.DE
+- name: Encavis AG
+  isin: DE0006095003
+  symbols:
+    trading: ECV
+    yahoo: ECV.DE
+- name: HENSOLDT AG
+  isin: DE000HAG0005
+  symbols:
+    trading: HAG
+    yahoo: HAG.DE
+- name: SMA Solar Technology AG
+  isin: DE000A0DJ6J9
+  symbols:
+    trading: S92
+    yahoo: S92.DE

@@ -2,7 +2,6 @@ import pandas as pd
 
 from datetime import date, datetime
 from dateutil.relativedelta import relativedelta
-from dateutil.rrule import rrule, DAILY
 
 DATE_FORMAT = '%d.%m.%Y'
 
