@@ -36,15 +36,31 @@ class CompaniesComparer:
         return worksheet.col_values(5, 106)
 
     def compare(self, companies):
+        new_companies = self.international_securities_identification_numbers.copy()
         for company in companies:
-            for isin in self.international_securities_identification_numbers:
+            for isin in new_companies:
                 if company["isin"] == isin:
-                    self.international_securities_identification_numbers.remove(isin)
+                    new_companies.remove(isin)
                     continue
 
-        if self.international_securities_identification_numbers:
+        if new_companies:
             print("HDAX has changed!")
-            print(self.international_securities_identification_numbers)
+            print('New companies inside the HDAX')
+            print(new_companies)
+
+            removed_companies = companies
+            for isin in self.international_securities_identification_numbers:
+                for company in removed_companies:
+                    if company["isin"] == isin:
+                        removed_companies.remove(company)
+                        continue
+
+            print('Removed companies from the HDAX')
+            removed = list()
+            for removed_company in removed_companies:
+                removed.append(removed_company['isin'])
+            print(removed)
+
             raise CompanyMismatchException()
 
         print('HDAX is up-to-date')
