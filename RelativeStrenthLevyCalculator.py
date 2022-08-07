@@ -32,6 +32,7 @@ class RelativeStrengthLevyCalculator:
             rsl.dropna(inplace=True)
             rsl.index = rsl.index.strftime(DATE_FORMAT)
 
+            print("Calculated RSL for " + company["name"] + " is " + str(rsl.iloc[0]))
             frames.append(rsl.to_frame().transpose())
 
         result = pd.concat(frames)

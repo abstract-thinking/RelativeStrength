@@ -488,7 +488,7 @@
   symbols:
     trading: ECV
     yahoo: ECV.DE
-- name: HENSOLDT AG
+- name: Hensoldt AG
   isin: DE000HAG0005
   symbols:
     trading: HAG

@@ -29,7 +29,7 @@ class ExcelWriter:
         dates = list()
         for friday in self.fridays:
             if friday in self.daily.columns:
-                print(friday)
+                # print(friday)
                 dates.append(friday)
             else:
                 friday_not_found = datetime.strptime(friday, DATE_FORMAT)

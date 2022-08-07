@@ -6,6 +6,6 @@ class CompaniesLoader:
 
     @staticmethod
     def load():
-        with open('./hdax.yml') as f:
+        with open('./hdax.yml', encoding="utf-8") as f:
             companies = yaml.load(f, Loader=SafeLoader)
         return companies
