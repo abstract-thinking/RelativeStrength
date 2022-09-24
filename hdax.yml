@@ -1,41 +1,36 @@
-- name: 1&1 AG
-  isin: DE0005545503
-  symbols:
-    trading: 1U1
-    yahoo: 1U1.DE
 - name: Adidas AG
   isin: DE000A1EWWW0
-  symbols: 
+  symbols:
     trading: ADS
     yahoo: ADS.DE
 - name: Airbus SE
   isin: NL0000235190
-  symbols: 
+  symbols:
     trading: AIR
     yahoo: AIR.PA
 - name: AIXTRON SE
   isin: DE000A0WMPJ6
-  symbols: 
+  symbols:
     trading: AIXA
     yahoo: AIXA.DE
 - name: Allianz SE
   isin: DE0008404005
-  symbols: 
+  symbols:
     trading: ALV
     yahoo: ALV.DE
 - name: Aroundtown SA
   isin: LU1673108939
-  symbols: 
+  symbols:
     trading: AT1
     yahoo: AT1.DE
 - name: Aurubis AG
   isin: DE0006766504
-  symbols: 
+  symbols:
     trading: NDA
     yahoo: NDA.DE
 - name: BASF SE
   isin: DE000BASF111
-  symbols: 
+  symbols:
     trading: BAS
     yahoo: BAS.DE
 - name: Bayerische Motoren Werke AG
@@ -45,57 +40,57 @@
     yahoo: BMW.DE
 - name: Bayer AG
   isin: DE000BAY0017
-  symbols: 
+  symbols:
     trading: BAYN
     yahoo: BAYN.DE
 - name: Bechtle AG
   isin: DE0005158703
-  symbols: 
+  symbols:
     trading: BC8
     yahoo: BC8.DE
 - name: Befesa SA
   isin: LU1704650164
-  symbols: 
+  symbols:
     trading: BFSA
     yahoo: BFSA.DE
 - name: Beiersdorf AG
   isin: DE0005200000
-  symbols: 
+  symbols:
     trading: BEI
     yahoo: BEI.DE
 - name: Brenntag AG
   isin: DE000A1DAHH0
-  symbols: 
+  symbols:
     trading: BNR
     yahoo: BNR.DE
 - name: Cancom SE
   isin: DE0005419105
-  symbols: 
+  symbols:
     trading: COK
     yahoo: COK.DE
 - name: Carl Zeiss Meditec AG
   isin: DE0005313704
-  symbols: 
+  symbols:
     trading: AFX
     yahoo: AFX.DE
 - name: Commerzbank AG
   isin: DE000CBK1001
-  symbols: 
+  symbols:
     trading: CBK
     yahoo: CBK.DE
 - name: CompuGroup Medical SE & Co. KGaA
   isin: DE000A288904
-  symbols: 
+  symbols:
     trading: COP
     yahoo: COP.DE
 - name: Continental AG
   isin: DE0005439004
-  symbols: 
+  symbols:
     trading: CON
     yahoo: CON.DE
 - name: Covestro AG
   isin: DE0006062144
-  symbols: 
+  symbols:
     trading: 1COV
     yahoo: 1COV.DE
 - name: CTS Eventim AG & Co. KGaA
@@ -105,22 +100,22 @@
     yahoo: EVD.DE
 - name: Daimler Truck Holding AG
   isin: DE000DTR0CK8
-  symbols: 
+  symbols:
     trading: DTG
     yahoo: DTG.DE
 - name: Delivery Hero SE
   isin: DE000A2E4K43
-  symbols: 
+  symbols:
     trading: DHER
     yahoo: DHER.DE
 - name: Deutsche Bank AG
   isin: DE0005140008
-  symbols: 
+  symbols:
     trading: DBK
     yahoo: DBK.DE
 - name: Deutsche Börse AG
   isin: DE0005810055
-  symbols: 
+  symbols:
     trading: DB1
     yahoo: DB1.DE
 - name: Deutsche Lufthansa AG
@@ -130,217 +125,212 @@
     yahoo: LHA.DE
 - name: Deutsche Post AG
   isin: DE0005552004
-  symbols: 
+  symbols:
     trading: DPW
     yahoo: DPW.DE
 - name: Deutsche Telekom AG
   isin: DE0005557508
-  symbols: 
+  symbols:
     trading: DTE
     yahoo: DTE.DE
 - name: Deutsche Wohnen SE
   isin: DE000A0HN5C6
-  symbols: 
+  symbols:
     trading: DWNI
     yahoo: DWNI.DE
 - name: Dürr AG
   isin: DE0005565204
-  symbols: 
+  symbols:
     trading: DUE
     yahoo: DUE.DE
 - name: E.ON SE
   isin: DE000ENAG999
-  symbols: 
+  symbols:
     trading: EOAN
     yahoo: EOAN.DE
 - name: Evonik Industries AG
   isin: DE000EVNK013
-  symbols: 
+  symbols:
     trading: EVK
     yahoo: EVK.DE
 - name: Evotec SE
   isin: DE0005664809
-  symbols: 
+  symbols:
     trading: EVT
     yahoo: EVT.DE
 - name: Fraport AG
   isin: DE0005773303
-  symbols: 
+  symbols:
     trading: FRA
     yahoo: FRA.DE
 - name: freenet AG
   isin: DE000A0Z2ZZ5
-  symbols: 
+  symbols:
     trading: FNTN
     yahoo: FNTN.DE
 - name: Fresenius Medical Care KGaA
   isin: DE0005785802
-  symbols: 
+  symbols:
     trading: FME
     yahoo: FME.DE
 - name: Fresenius SE & Co. KGaA
   isin: DE0005785604
-  symbols: 
+  symbols:
     trading: FRE
     yahoo: FRE.DE
 - name: Fuchs Petrolub SE
   isin: DE000A3E5D64
-  symbols: 
+  symbols:
     trading: FPE
     yahoo: FPE.DE
 - name: GEA Group AG
   isin: DE0006602006
-  symbols: 
+  symbols:
     trading: G1A
     yahoo: G1A.DE
 - name: Gerresheimer AG
   isin: DE000A0LD6E6
-  symbols: 
+  symbols:
     trading: GXI
     yahoo: GXI.DE
-- name: Grand City Properties SA
-  isin: LU0775917882
-  symbols: 
-    trading: GYC
-    yahoo: GYC.DE
 - name: Hannover Rück SE
   isin: DE0008402215
-  symbols: 
+  symbols:
     trading: HNR1
     yahoo: HNR1.DE
 - name: HeidelbergCement AG
   isin: DE0006047004
-  symbols: 
+  symbols:
     trading: HEI
     yahoo: HEI.DE
 - name: HelloFresh SE
   isin: DE000A161408
-  symbols: 
+  symbols:
     trading: HFG
     yahoo: HFG.DE
 - name: Henkel AG & Co. KGaA Vz
   isin: DE0006048432
-  symbols: 
+  symbols:
     trading: HEN3
     yahoo: HEN3.DE
 - name: Hugo Boss AG
   isin: DE000A1PHFF7
-  symbols: 
+  symbols:
     trading: BOSS
     yahoo: BOSS.DE
 - name: Infineon Technologies AG
   isin: DE0006231004
-  symbols: 
+  symbols:
     trading: IFX
     yahoo: IFX.DE
 - name: Jenoptik AG
   isin: DE000A2NB601
-  symbols: 
+  symbols:
     trading: JEN
     yahoo: JEN.DE
 - name: Jungheinrich AG
   isin: DE0006219934
-  symbols: 
+  symbols:
     trading: JUN3
     yahoo: JUN3.DE
 - name: K+S AG
   isin: DE000KSAG888
-  symbols: 
+  symbols:
     trading: SDF
     yahoo: SDF.DE
 - name: Kion Group AG
   isin: DE000KGX8881
-  symbols: 
+  symbols:
     trading: KGX
     yahoo: KGX.DE
 - name: Knorr-Bremse AG
   isin: DE000KBX1006
-  symbols: 
+  symbols:
     trading: KBX
     yahoo: KBX.DE
 - name: Lanxess AG
   isin: DE0005470405
-  symbols: 
+  symbols:
     trading: LXS
     yahoo: LXS.DE
 - name: LEG Immobilien AG
   isin: DE000LEG1110
-  symbols: 
+  symbols:
     trading: LEG
     yahoo: LEG.DE
 - name: Linde PLC
   isin: IE00BZ12WP82
-  symbols: 
+  symbols:
     trading: LIN
     yahoo: LIN.DE
 - name: Mercedes-Benz AG
   isin: DE0007100000
-  symbols: 
+  symbols:
     trading: MBG
     yahoo: MBG.DE
 - name: Merck KGaA
   isin: DE0006599905
-  symbols: 
+  symbols:
     trading: MRK
     yahoo: MRK.DE
 - name: MorphoSys AG
   isin: DE0006632003
-  symbols: 
+  symbols:
     trading: MOR
     yahoo: MOR.DE
 - name: MTU Aero Engines AG
   isin: DE000A0D9PT0
-  symbols: 
+  symbols:
     trading: MTX
     yahoo: MTX.DE
 - name: Münchener Rückversicherungs-Gesellschaft AG
   isin: DE0008430026
-  symbols: 
+  symbols:
     trading: MUV2
     yahoo: MUV2.DE
 - name: Nagarro SE
   isin: DE000A3H2200
-  symbols: 
+  symbols:
     trading: NA9
     yahoo: NA9.DE
 - name: Nemetschek SE
   isin: DE0006452907
-  symbols: 
+  symbols:
     trading: NEM
     yahoo: NEM.DE
 - name: Porsche Automobil Holding SE
   isin: DE000PAH0038
-  symbols: 
+  symbols:
     trading: PAH3
     yahoo: PAH3.DE
 - name: ProSiebenSat.1 Media SE
   isin: DE000PSM7770
-  symbols: 
+  symbols:
     trading: PSM
     yahoo: PSM.DE
 - name: PUMA SE
   isin: DE0006969603
-  symbols: 
+  symbols:
     trading: PUM
     yahoo: PUM.DE
 - name: Qiagen N.V.
   isin: NL0012169213
-  symbols: 
+  symbols:
     trading: QIA
     yahoo: QIA.DE
 - name: RATIONAL AG
   isin: DE0007010803
-  symbols: 
+  symbols:
     trading: RAA
     yahoo: RAA.DE
 - name: Rheinmetall AG
   isin: DE0007030009
-  symbols: 
+  symbols:
     trading: RHM
     yahoo: RHM.DE
 - name: RWE AG
   isin: DE0007037129
-  symbols: 
+  symbols:
     trading: RWE
     yahoo: RWE.DE
 - name: RTL Group SA
@@ -348,44 +338,39 @@
   symbols:
     trading: RRTL
     yahoo: RRTL.DE
-- name: S&T AG
-  isin: AT0000A0E9W5
-  symbols: 
-    trading: SANT
-    yahoo: SANT.DE
 - name: SAP SE
   isin: DE0007164600
-  symbols: 
+  symbols:
     trading: SAP
     yahoo: SAP.DE
 - name: Sartorius AG
   isin: DE0007165631
-  symbols: 
+  symbols:
     trading: SRT
     yahoo: SRT.DE
 - name: Scout24 SE
   isin: DE000A12DM80
-  symbols: 
+  symbols:
     trading: G24
     yahoo: G24.DE
 - name: Siemens AG
   isin: DE0007236101
-  symbols: 
+  symbols:
     trading: SIE
     yahoo: SIE.DE
 - name: Siemens Energy AG
   isin: DE000ENER6Y0
-  symbols: 
+  symbols:
     trading: ENR
     yahoo: ENR.DE
 - name: Siemens Healthineers AG
-  isin:  DE000SHL1006
-  symbols: 
+  isin: DE000SHL1006
+  symbols:
     trading: SHL
     yahoo: SHL.DE
 - name: Siltronic AG
   isin: DE000WAF3001
-  symbols: 
+  symbols:
     trading: WAF
     yahoo: WAF.DE
 - name: Sixt SE
@@ -395,67 +380,62 @@
     yahoo: SIX2.DE
 - name: Software AG
   isin: DE000A2GS401
-  symbols: 
+  symbols:
     trading: SOW
     yahoo: SOW.DE
 - name: Stroeer SE & Co KGaA
   isin: DE0007493991
-  symbols: 
+  symbols:
     trading: SAX
     yahoo: SAX.DE
 - name: SUSE SA
   isin: LU2333210958
-  symbols: 
+  symbols:
     trading: SUSE
     yahoo: SUSE.DE
 - name: Symrise AG
   isin: DE000SYM9999
-  symbols: 
+  symbols:
     trading: SY1
     yahoo: SY1.DE
 - name: TAG Immobilien AG
   isin: DE0008303504
-  symbols: 
+  symbols:
     trading: TEG
     yahoo: TEG.DE
 - name: Talanx AG
   isin: DE000TLX1005
-  symbols: 
+  symbols:
     trading: TLX
     yahoo: TLX.DE
 - name: TeamViewer AG
   isin: DE000A2YN900
-  symbols: 
+  symbols:
     trading: TMV
     yahoo: TMV.DE
 - name: Telefonica SA
   isin: DE000A1J5RX9
-  symbols: 
+  symbols:
     trading: O2D
     yahoo: O2D.DE
 - name: ThyssenKrupp AG
   isin: DE0007500001
-  symbols: 
+  symbols:
     trading: THK
     yahoo: TKA.DE
-- name: Uniper SE
-  isin: DE000UNSE018
-  symbols: 
-    trading: UN01
-    yahoo: UN01.DE
 - name: United Internet AG
   isin: DE0005089031
-  symbols: 
+  symbols:
     trading: UTDI
     yahoo: UTDI.DE
 - name: Vantage Towers AG
   isin: DE000A3H3LL2
-  symbols: 
+  symbols:
     trading: VTWR
     yahoo: VTWR.DE
 - name: VARTA AG
   isin: DE000A0TGJ55
-  symbols: 
+  symbols:
     trading: VAR1
     yahoo: VAR1.DE
 - name: VERBIO Vereinigte BioEnergie AG
@@ -465,22 +445,22 @@
     yahoo: VBK.DE
 - name: Volkswagen AG Vz.
   isin: DE0007664039
-  symbols: 
+  symbols:
     trading: VOW3
     yahoo: VOW3.DE
 - name: Vonovia SE
   isin: DE000A1ML7J1
-  symbols: 
+  symbols:
     trading: VNA
     yahoo: VNA.DE
 - name: Wacker Chemie AG
   isin: DE000WCH8881
-  symbols: 
+  symbols:
     trading: WCH
     yahoo: WCH.DE
 - name: Zalando SE
   isin: DE000ZAL1111
-  symbols: 
+  symbols:
     trading: ZAL
     yahoo: ZAL.DE
 - name: Encavis AG
@@ -498,3 +478,23 @@
   symbols:
     trading: S92
     yahoo: S92.DE
+- name: ADTRAN Holdings, Inc.
+  isin: US00486H1059
+  symbols:
+    trading: QH9
+    yahoo: QH9.DE
+- name: HELLA GmbH & Co. KGaA
+  isin: DE000A13SX22
+  symbols:
+    trading: HLE
+    yahoo: HLE.DE
+- name: Nordex SE
+  isin: DE000A0D6554
+  symbols:
+    trading: NDX1
+    yahoo: NDX1.DE
+- name: Stabilus S.A.
+  isin: DE000STAB1L8
+  symbols:
+    trading: STM
+    yahoo: STM.DE
