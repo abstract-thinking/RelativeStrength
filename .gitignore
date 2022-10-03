@@ -2,5 +2,5 @@
 *.iml
 *.iws
 
-*.xlsx
-*.xlsx#
+*.xlsx*
+*.ods*
