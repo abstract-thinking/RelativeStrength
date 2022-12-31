@@ -133,11 +133,11 @@
   symbols:
     trading: DTE
     yahoo: DTE.DE
-- name: Deutsche Wohnen SE
-  isin: DE000A0HN5C6
+- name: Porsche AG
+  isin: DE000PAG9113
   symbols:
-    trading: DWNI
-    yahoo: DWNI.DE
+    trading: PAH3
+    yahoo: PAH3.DE
 - name: Dürr AG
   isin: DE0005565204
   symbols:

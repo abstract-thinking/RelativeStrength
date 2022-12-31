@@ -11,6 +11,10 @@ def highlight_max(s):
     return ['background-color: #e06666' if v in is_large else '' for v in s]
 
 
+def format_digits(val):
+    return 'number-format: #,##0.0000'
+
+
 class ExcelWriter:
 
     def __init__(self, daily):
@@ -51,18 +55,22 @@ class ExcelWriter:
 
     def write_weekly(self):
         writer = pd.ExcelWriter("hdax.xlsx", engine='xlsxwriter')
-        self.weekly.sort_values(self.fridays[-1], ascending=False).style.apply(highlight_max).to_excel(
-            writer, sheet_name="rsl", float_format='%06.4f')
+
+        # write data to excel
+        self.weekly.sort_values(self.fridays[-1], ascending=False) \
+            .style \
+            .apply(highlight_max) \
+            .applymap(format_digits) \
+            .to_excel(writer, sheet_name="rsl")
+
+        # Modify layout
         worksheet = writer.sheets['rsl']
+        worksheet.set_column(0, 0, 40)  # company names - longest at the moment Münchener Rückversicherungs-Gesellschaft AG
 
-        font_format = writer.book.add_format({"font_name": "Arial"})
-        num_format = writer.book.add_format({'num_format': '#,##0.00'})
-        worksheet.set_column(0, 0, 40, font_format) # index/company names
-
+        column_length = 12  # only the length of date is relevant dd.mm.yyyy
         for column in self.weekly:
-            # column_length = max(weekly[column].astype(str).map(len).max(), len(column))
-            column_length = 13  # only the length of date is relevant
             col_idx = 1 + self.weekly.columns.get_loc(column)
-            worksheet.set_column(col_idx, col_idx, column_length, num_format)
+            # print(col_idx)
+            worksheet.set_column(col_idx, col_idx, column_length)
 
-        writer.save()
+        writer.close()

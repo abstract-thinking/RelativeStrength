@@ -24,7 +24,7 @@ class RelativeStrengthLevyCalculator:
                 continue
 
             try:
-                rsl = history.Close / ta.sma(history.Close, length=PERIOD_IN_DAYS)
+                rsl = history.Close / ta.sma(history.Close, length=PERIOD_IN_DAYS, offset=1)
             except TypeError:
                 print("Could not calculate RSL for " + yahoo_symbol)
                 continue
@@ -32,7 +32,7 @@ class RelativeStrengthLevyCalculator:
             rsl.dropna(inplace=True)
             rsl.index = rsl.index.strftime(DATE_FORMAT)
 
-            print("Calculated RSL for " + company["name"] + " is " + str(rsl.iloc[0]))
+            print("Calculated RSL for " + company["name"] )
             frames.append(rsl.to_frame().transpose())
 
         result = pd.concat(frames)
