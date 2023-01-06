@@ -136,8 +136,8 @@
 - name: Porsche AG
   isin: DE000PAG9113
   symbols:
-    trading: PAH3
-    yahoo: PAH3.DE
+    trading: P911
+    yahoo: P911.DE
 - name: Dürr AG
   isin: DE0005565204
   symbols:

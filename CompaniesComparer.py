@@ -36,17 +36,19 @@ class CompaniesComparer:
         return worksheet.col_values(5, 106)
 
     def compare(self, companies):
-        new_companies = self.international_securities_identification_numbers.copy()
+        current_isins = self.international_securities_identification_numbers.copy()
         for company in companies:
-            for isin in new_companies:
+            for isin in current_isins:
                 if company["isin"] == isin:
-                    new_companies.remove(isin)
+#                    print(company["isin"] + ' == ' + isin)
+#                    print('Remove current ' + str(company))
+                    current_isins.remove(isin)
                     continue
 
-        if new_companies:
+        if current_isins:
             print("HDAX has changed!")
             print('New companies inside the HDAX')
-            print(new_companies)
+            print(current_isins)
 
             removed_companies = companies
             for isin in self.international_securities_identification_numbers:
