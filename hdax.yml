@@ -3,6 +3,11 @@
   symbols:
     trading: ADS
     yahoo: ADS.DE
+- name: ADTRAN Holdings, Inc.
+  isin: US00486H1059
+  symbols:
+    trading: QH9
+    yahoo: QH9.DE
 - name: Airbus SE
   isin: NL0000235190
   symbols:
@@ -148,6 +153,16 @@
   symbols:
     trading: EOAN
     yahoo: EOAN.DE
+- name: Eckert & Ziegler Strahlen & Medizintechnik AG
+  isin: DE0005659700
+  symbols:
+    trading: EUZ
+    yahoo: EUZ.DE
+- name: Encavis AG
+  isin: DE0006095003
+  symbols:
+    trading: ECV
+    yahoo: ECV.DE
 - name: Evonik Industries AG
   isin: DE000EVNK013
   symbols:
@@ -203,6 +218,11 @@
   symbols:
     trading: HEI
     yahoo: HEI.DE
+- name: HELLA GmbH & Co. KGaA
+  isin: DE000A13SX22
+  symbols:
+    trading: HLE
+    yahoo: HLE.DE
 - name: HelloFresh SE
   isin: DE000A161408
   symbols:
@@ -213,6 +233,11 @@
   symbols:
     trading: HEN3
     yahoo: HEN3.DE
+- name: Hensoldt AG
+  isin: DE000HAG0005
+  symbols:
+    trading: HAG
+    yahoo: HAG.DE
 - name: Hugo Boss AG
   isin: DE000A1PHFF7
   symbols:
@@ -258,11 +283,6 @@
   symbols:
     trading: LEG
     yahoo: LEG.DE
-- name: Linde PLC
-  isin: IE00BZ12WP82
-  symbols:
-    trading: LIN
-    yahoo: LIN.DE
 - name: Mercedes-Benz AG
   isin: DE0007100000
   symbols:
@@ -298,6 +318,11 @@
   symbols:
     trading: NEM
     yahoo: NEM.DE
+- name: Nordex SE
+  isin: DE000A0D6554
+  symbols:
+    trading: NDX1
+    yahoo: NDX1.DE
 - name: Porsche Automobil Holding SE
   isin: DE000PAH0038
   symbols:
@@ -378,11 +403,21 @@
   symbols:
     trading: SIX2
     yahoo: SIX2.DE
+- name: SMA Solar Technology AG
+  isin: DE000A0DJ6J9
+  symbols:
+    trading: S92
+    yahoo: S92.DE
 - name: Software AG
   isin: DE000A2GS401
   symbols:
     trading: SOW
     yahoo: SOW.DE
+- name: Stabilus S.A.
+  isin: DE000STAB1L8
+  symbols:
+    trading: STM
+    yahoo: STM.DE
 - name: Stroeer SE & Co KGaA
   isin: DE0007493991
   symbols:
@@ -433,11 +468,6 @@
   symbols:
     trading: VTWR
     yahoo: VTWR.DE
-- name: VARTA AG
-  isin: DE000A0TGJ55
-  symbols:
-    trading: VAR1
-    yahoo: VAR1.DE
 - name: VERBIO Vereinigte BioEnergie AG
   isin: DE000A0JL9W6
   symbols:
@@ -463,38 +493,3 @@
   symbols:
     trading: ZAL
     yahoo: ZAL.DE
-- name: Encavis AG
-  isin: DE0006095003
-  symbols:
-    trading: ECV
-    yahoo: ECV.DE
-- name: Hensoldt AG
-  isin: DE000HAG0005
-  symbols:
-    trading: HAG
-    yahoo: HAG.DE
-- name: SMA Solar Technology AG
-  isin: DE000A0DJ6J9
-  symbols:
-    trading: S92
-    yahoo: S92.DE
-- name: ADTRAN Holdings, Inc.
-  isin: US00486H1059
-  symbols:
-    trading: QH9
-    yahoo: QH9.DE
-- name: HELLA GmbH & Co. KGaA
-  isin: DE000A13SX22
-  symbols:
-    trading: HLE
-    yahoo: HLE.DE
-- name: Nordex SE
-  isin: DE000A0D6554
-  symbols:
-    trading: NDX1
-    yahoo: NDX1.DE
-- name: Stabilus S.A.
-  isin: DE000STAB1L8
-  symbols:
-    trading: STM
-    yahoo: STM.DE
