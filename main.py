@@ -7,6 +7,6 @@ if __name__ == "__main__":
     companies = CompaniesLoader.load()
     CompaniesComparer().compare(companies)
 
-    daily = RelativeStrengthLevyCalculator(companies).calculate()
-    ExcelWriter(daily).write_weekly()
+    daily_rsls = RelativeStrengthLevyCalculator(companies).calculate()
+    ExcelWriter(daily_rsls).write_weekly()
     print("Wrote result to file. Done!")

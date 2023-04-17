@@ -71,4 +71,3 @@ class CompaniesComparer:
             removed.append(removed_company['isin'])
         print(removed)
        # raise CompanyMismatchException()
-
