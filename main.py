@@ -9,3 +9,4 @@ if __name__ == "__main__":
 
     daily = RelativeStrengthLevyCalculator(companies).calculate()
     ExcelWriter(daily).write_weekly()
+    print("Wrote result to file. Done!")
