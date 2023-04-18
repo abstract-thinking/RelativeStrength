@@ -22,7 +22,7 @@ class ExcelWriter:
     def __init__(self, daily_rsls):
         self.daily_rsls = daily_rsls
         self.last_stock_exchange_days_of_the_week = ExcelWriter.find_last_stock_exchange_days_of_the_week()
-        print(self.last_stock_exchange_days_of_the_week)
+        # print(self.last_stock_exchange_days_of_the_week)
         self.weekly_rsls = self.to_weekly_rsls()
 
     @staticmethod

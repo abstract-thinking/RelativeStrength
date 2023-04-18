@@ -33,7 +33,17 @@ class CompaniesComparer:
 
         workbook = xlrd.open_workbook(file_contents=response.content)
         worksheet = workbook.sheet_by_index(1)
-        return worksheet.col_values(5, 106)
+
+        isins = list()
+        for i in range(worksheet.nrows):
+            row = worksheet.row_values(i)
+            # print(row)
+            if row[1] == 'HDAX PERFORMANCE-INDEX':
+                isins.append(row[5])
+
+  #      return worksheet.col_value#s(5, 106)
+        print("Found number of isins: " + str(len(isins)))
+        return isins
 
     def compare(self, companies):
         self.find_new_companies_inside_hdax(companies)
@@ -45,8 +55,7 @@ class CompaniesComparer:
         for company in companies:
             for isin in current_isins:
                 if company["isin"] == isin:
-#                    print(company["isin"] + ' == ' + isin)
-#                    print('Remove current ' + str(company))
+                    # print('Remove current ' + str(company))
                     current_isins.remove(isin)
                     continue
 
@@ -57,7 +66,6 @@ class CompaniesComparer:
             raise CompanyMismatchException()
 
     def find_removed_companies_from_hdax(self, companies):
-        # TODO: It does not work when only 99 companies in the index
         removed_companies = companies.copy()
         for isin in self.international_securities_identification_numbers:
             for company in removed_companies:
@@ -65,9 +73,12 @@ class CompaniesComparer:
                     removed_companies.remove(company)
                     continue
 
-        print('Removed companies from the HDAX')
-        removed = list()
-        for removed_company in removed_companies:
-            removed.append(removed_company['isin'])
-        print(removed)
-       # raise CompanyMismatchException()
+        if removed_companies:
+            print("HDAX has changed!")
+            print('Removed companies from the HDAX')
+            removed = list()
+            for removed_company in removed_companies:
+                removed.append(removed_company['isin'])
+            print(removed)
+            print(removed_companies)
+            raise CompanyMismatchException()
