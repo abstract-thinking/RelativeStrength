@@ -20,10 +20,9 @@ def format_digits(val):
 class ExcelWriter:
 
     def __init__(self, daily_rsls):
-        self.daily_rsls = daily_rsls
         self.last_stock_exchange_days_of_the_week = ExcelWriter.find_last_stock_exchange_days_of_the_week()
         # print(self.last_stock_exchange_days_of_the_week)
-        self.weekly_rsls = self.to_weekly_rsls()
+        self.weekly_snapshot = self.to_weekly(daily_rsls)
 
     @staticmethod
     def find_last_stock_exchange_days_of_the_week():
@@ -56,15 +55,15 @@ class ExcelWriter:
     def to_date(exchange_day):
         return date(exchange_day.year, exchange_day.month, exchange_day.day)
 
-    def to_weekly_rsls(self):
-        weekly_rls = self.daily_rsls.filter(self.last_stock_exchange_days_of_the_week)
-        return weekly_rls[weekly_rls.columns[::-1]]
+    def to_weekly(self, daily_rsls):
+        weekly_snapshot = daily_rsls.filter(self.last_stock_exchange_days_of_the_week)
+        return weekly_snapshot[weekly_snapshot.columns[::-1]]
 
     def write_weekly(self):
         writer = pd.ExcelWriter("hdax.xlsx", engine='xlsxwriter')
 
         # write data to excel
-        self.weekly_rsls.sort_values(self.last_stock_exchange_days_of_the_week[-1], ascending=False) \
+        self.weekly_snapshot.sort_values(self.last_stock_exchange_days_of_the_week[-1], ascending=False) \
             .style \
             .apply(highlight_max) \
             .applymap(format_digits) \
@@ -75,8 +74,8 @@ class ExcelWriter:
         worksheet.set_column(0, 0, 40)  # company names - longest at the moment Münchener Rückversicherungs-Gesellschaft AG
 
         column_length = 12  # only the length of date is relevant dd.mm.yyyy
-        for column in self.weekly_rsls:
-            col_idx = 1 + self.weekly_rsls.columns.get_loc(column)
+        for column in self.weekly_snapshot:
+            col_idx = 1 + self.weekly_snapshot.columns.get_loc(column)
             # print(col_idx)
             worksheet.set_column(col_idx, col_idx, column_length)
 

@@ -20,7 +20,7 @@ class RelativeStrengthLevyCalculator:
             data = yf.Ticker(yahoo_symbol)
             history = data.history(period='1y', interval="1d")
             if history.size < PERIOD_IN_DAYS:
-                print("No less data for " + yahoo_symbol)
+                print("Too less data for " + yahoo_symbol)
                 continue
 
             try:
