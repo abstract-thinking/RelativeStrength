@@ -16,18 +16,21 @@ class CompaniesComparer:
 
     @staticmethod
     def fetch_hdax():
-        day = date.today()
-        url = URL_TEMPLATE.format(day)
+        today = date.today()
+        print("Today: " + str(today))
+        if today.weekday() == 5 or today.weekday() == 6:
+            publish_day = today + relativedelta(weekday=FR(-1))
+        else:
+            publish_day = today
+        print("Using publish day: " + str(publish_day))
+        url = URL_TEMPLATE.format(publish_day)
         print(url)
         response = requests.get(url, verify=False)
         if response.status_code == 404:
-            # Be prepared that maybe during the week the Excel sheet does not exist, use the last Friday
-            print('Excel sheet not found. Retry!')
-            if day.weekday() != 4:
-                day = date.today() + relativedelta(weekday=FR(-1))
-            else:
-                day = date.today() + relativedelta(days=-1)
-            url = URL_TEMPLATE.format(day)
+            # Maybe Karfreitag, normally I should check
+            print('Excel sheet not found. Using another publish day: ' + str(publish_day))
+            publish_day = publish_day + relativedelta(days=-1)
+            url = URL_TEMPLATE.format(publish_day)
             print(url)
             response = requests.get(url, verify=False)
 

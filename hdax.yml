@@ -23,11 +23,11 @@
   symbols:
     trading: ALV
     yahoo: ALV.DE
-- name: Aroundtown SA
-  isin: LU1673108939
+- name: Atoss Software AG
+  isin: DE0005104400
   symbols:
-    trading: AT1
-    yahoo: AT1.DE
+    trading: AOF
+    yahoo: AOF.DE
 - name: Aurubis AG
   isin: DE0006766504
   symbols:
@@ -168,7 +168,7 @@
   symbols:
     trading: EVK
     yahoo: EVK.DE
-- name: Evotec SE
+- name: Evotec AG
   isin: DE0005664809
   symbols:
     trading: EVT
@@ -238,6 +238,11 @@
   symbols:
     trading: HAG
     yahoo: HAG.DE
+- name: Hochtief AG
+  isin: DE0006070006
+  symbols:
+    trading: HOT
+    yahoo: HOT.DE
 - name: Hugo Boss AG
   isin: DE000A1PHFF7
   symbols:
@@ -273,6 +278,16 @@
   symbols:
     trading: KBX
     yahoo: KBX.DE
+- name: Konton AG
+  isin: AT0000A0E9W5
+  symbols:
+    trading: KTN
+    yahoo: KTN.DE
+- name: Krones AG
+  isin: DE0006335003
+  symbols:
+    trading: KRN
+    yahoo: KRN.DE
 - name: Lanxess AG
   isin: DE0005470405
   symbols:
@@ -348,6 +363,11 @@
   symbols:
     trading: RAA
     yahoo: RAA.DE
+- name: Redcare Pharmacy NV
+  isin: NL0012044747
+  symbols:
+    trading: SAE
+    yahoo: RDC.DE
 - name: Rheinmetall AG
   isin: DE0007030009
   symbols:
@@ -423,11 +443,6 @@
   symbols:
     trading: SAX
     yahoo: SAX.DE
-- name: SUSE SA
-  isin: LU2333210958
-  symbols:
-    trading: SUSE
-    yahoo: SUSE.DE
 - name: Symrise AG
   isin: DE000SYM9999
   symbols:
@@ -463,11 +478,6 @@
   symbols:
     trading: UTDI
     yahoo: UTDI.DE
-- name: Vantage Towers AG
-  isin: DE000A3H3LL2
-  symbols:
-    trading: VTWR
-    yahoo: VTWR.DE
 - name: VERBIO Vereinigte BioEnergie AG
   isin: DE000A0JL9W6
   symbols:

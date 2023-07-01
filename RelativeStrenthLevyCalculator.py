@@ -23,8 +23,14 @@ class RelativeStrengthLevyCalculator:
                 print("Too less data for " + yahoo_symbol)
                 continue
 
+            # TODO: This sucks: When a dividend is paid the price are missing
+            # 09. Mai 2023 64,02 64,30 63,36 64,30 64,30 153.609
+            # 08. Mai 2023 - -    -    -    -    -
+            # 08. Mai 2023 1.45 Dividende
             try:
-                rsl = history.Close / ta.sma(history.Close, length=PERIOD_IN_DAYS, offset=1)
+                close = history.Close.copy()
+                close.dropna(inplace=True)
+                rsl = close / ta.sma(close, length=PERIOD_IN_DAYS, offset=1)
             except TypeError:
                 print("Could not calculate RSL for " + yahoo_symbol)
                 continue
