@@ -7,7 +7,8 @@ import xlrd
 from CompaniesMismatchException import CompanyMismatchException
 
 URL_TEMPLATE = 'https://www.dax-indices.com/documents/dax-indices/Documents/Resources/WeightingFiles/Composition/{0:%Y}/{0:%B}/HDAX_ICR.{0:%Y%m%d}.xls'
-
+# https://www.stoxx.com/data-index-details?symbol=HKDX
+HDAX_COMPOSITION_URL = 'https://www.stoxx.com/documents/stoxxnet/Documents/Indices/Current/Composition_Files/icr_hkdx.xls'
 
 class CompaniesComparer:
 
@@ -16,23 +17,8 @@ class CompaniesComparer:
 
     @staticmethod
     def fetch_hdax():
-        today = date.today()
-        print("Today: " + str(today))
-        if today.weekday() == 5 or today.weekday() == 6:
-            publish_day = today + relativedelta(weekday=FR(-1))
-        else:
-            publish_day = today
-        print("Using publish day: " + str(publish_day))
-        url = URL_TEMPLATE.format(publish_day)
-        print(url)
-        response = requests.get(url, verify=False)
-        if response.status_code == 404:
-            # Maybe Karfreitag, normally I should check
-            print('Excel sheet not found. Using another publish day: ' + str(publish_day))
-            publish_day = publish_day + relativedelta(days=-1)
-            url = URL_TEMPLATE.format(publish_day)
-            print(url)
-            response = requests.get(url, verify=False)
+        response = requests.get(HDAX_COMPOSITION_URL, verify=False)
+        response.raise_for_status()
 
         workbook = xlrd.open_workbook(file_contents=response.content)
         worksheet = workbook.sheet_by_index(1)

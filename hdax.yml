@@ -23,6 +23,11 @@
   symbols:
     trading: ALV
     yahoo: ALV.DE
+- name: Aroundtown SE
+  isin: LU1673108939
+  symbols:
+    trading: AT1
+    yahoo: AT1.DE
 - name: Atoss Software AG
   isin: DE0005104400
   symbols:
@@ -53,11 +58,6 @@
   symbols:
     trading: BC8
     yahoo: BC8.DE
-- name: Befesa SA
-  isin: LU1704650164
-  symbols:
-    trading: BFSA
-    yahoo: BFSA.DE
 - name: Beiersdorf AG
   isin: DE0005200000
   symbols:
@@ -131,38 +131,28 @@
 - name: Deutsche Post AG
   isin: DE0005552004
   symbols:
-    trading: DPW
-    yahoo: DPW.DE
+    trading: DHL
+    yahoo: DHL.DE
 - name: Deutsche Telekom AG
   isin: DE0005557508
   symbols:
     trading: DTE
     yahoo: DTE.DE
-- name: Porsche AG
-  isin: DE000PAG9113
-  symbols:
-    trading: P911
-    yahoo: P911.DE
-- name: Dürr AG
-  isin: DE0005565204
-  symbols:
-    trading: DUE
-    yahoo: DUE.DE
 - name: E.ON SE
   isin: DE000ENAG999
   symbols:
     trading: EOAN
     yahoo: EOAN.DE
-- name: Eckert & Ziegler Strahlen & Medizintechnik AG
-  isin: DE0005659700
-  symbols:
-    trading: EUZ
-    yahoo: EUZ.DE
 - name: Encavis AG
   isin: DE0006095003
   symbols:
     trading: ECV
     yahoo: ECV.DE
+- name: Energiekontor AG
+  isin: DE0005313506
+  symbols:
+    trading: EKT
+    yahoo: EKT.DE
 - name: Evonik Industries AG
   isin: DE000EVNK013
   symbols:
@@ -338,16 +328,21 @@
   symbols:
     trading: NDX1
     yahoo: NDX1.DE
+- name: PNE Wind AG
+  isin: DE000A0JBPG2
+  symbols:
+    trading: PNE3
+    yahoo: PNE3.DE
+- name: Porsche AG
+  isin: DE000PAG9113
+  symbols:
+    trading: P911
+    yahoo: P911.DE
 - name: Porsche Automobil Holding SE
   isin: DE000PAH0038
   symbols:
     trading: PAH3
     yahoo: PAH3.DE
-- name: ProSiebenSat.1 Media SE
-  isin: DE000PSM7770
-  symbols:
-    trading: PSM
-    yahoo: PSM.DE
 - name: PUMA SE
   isin: DE0006969603
   symbols:
@@ -428,11 +423,6 @@
   symbols:
     trading: S92
     yahoo: S92.DE
-- name: Software AG
-  isin: DE000A2GS401
-  symbols:
-    trading: SOW
-    yahoo: SOW.DE
 - name: Stabilus S.A.
   isin: DE000STAB1L8
   symbols:
@@ -483,6 +473,11 @@
   symbols:
     trading: VBK
     yahoo: VBK.DE
+- name: Vitesco Technologies Group AG
+  isin: DE000VTSC017
+  symbols:
+    trading: VTSC
+    yahoo: VTSC.DE
 - name: Volkswagen AG Vz.
   isin: DE0007664039
   symbols:

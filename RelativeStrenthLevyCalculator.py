@@ -30,7 +30,7 @@ class RelativeStrengthLevyCalculator:
             try:
                 close = history.Close.copy()
                 close.dropna(inplace=True)
-                rsl = close / ta.sma(close, length=PERIOD_IN_DAYS, offset=1)
+                rsl = close / ta.sma(close, length=PERIOD_IN_DAYS)
             except TypeError:
                 print("Could not calculate RSL for " + yahoo_symbol)
                 continue
